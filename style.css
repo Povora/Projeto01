@@ -66,6 +66,21 @@ nav a:hover {
 }
 
 .banner-conteudo h2{
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 15px;
 }
+
+.banner-conteudo p{
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.banner-conteudo button {
+    border: none;
+    padding: 11px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
