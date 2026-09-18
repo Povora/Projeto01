@@ -37,6 +37,7 @@ nav a {
 nav a:hover {
     color: #aaaaaa;
     text-decoration: underline;
+    transition: 0.3s;
 }
 
 .banner {
@@ -51,7 +52,7 @@ nav a:hover {
 
 .banner {
     background-image: 
-        linear-gradient(
+        linear-gradient( /* Cria um degrader */
             to right, 
             rgba(0, 0, 0, 0.9),
             rgba(0, 0, 0, 0.2)
@@ -82,5 +83,38 @@ nav a:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s;
+}
+
+.categoria {
+    padding: 30px 50px;
+}
+
+.categoria h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+.categoria .filmes {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none; /* escode a nav bar */
+}
+
+.filme img {
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.filme {
+    transition: transform 0.3s;
+}
+
+.filme:hover {
+    transform: scale(1.08);
 }
 
