@@ -100,15 +100,14 @@ nav a:hover {
     display: flex;
     gap: 20px;
     overflow-x: auto;
-    scrollbar-width: none; /* escode a nav bar */
 }
 
-    .categoria .filmes::-webkit-scrollbar {
+.categoria .filmes::-webkit-scrollbar {
     display: none; /* escode a nav bar no chrome*/
 }
 .filme img {
     width: 180px;
-    height: 260px;
+    height: 250px;
     object-fit: cover;
     border-radius: 5px;
 }
