@@ -86,6 +86,10 @@ nav a:hover {
     transition: 0.3s;
 }
 
+.banner-conteudo button:hover {
+    transform: scale(1.05);
+}
+
 .categoria {
     padding: 30px 50px;
 }
@@ -100,12 +104,15 @@ nav a:hover {
     display: flex;
     gap: 20px;
     overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 0;
+    scrollbar-width: none;
 }
 
 .categoria .filmes::-webkit-scrollbar {
     display: none; /* escode a nav bar no chrome*/
 }
-.filme img {
+.filmes img {
     width: 180px;
     height: 250px;
     object-fit: cover;
@@ -113,10 +120,16 @@ nav a:hover {
 }
 
 .filme {
+    display: block;
+    flex-shrink: 0;
+    position: relative;
     transition: transform 0.3s;
+    text-decoration: none;
+    color: inherit;
 }
 
 .filme:hover {
     transform: scale(1.08);
+    z-index: 2;
 }
 
